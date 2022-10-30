@@ -92,3 +92,20 @@ select {
 }
 
 
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.testimonial:last-child {
+  /* background: red; */
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
